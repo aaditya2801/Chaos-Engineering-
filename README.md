@@ -16,5 +16,16 @@
 ##### mkdir -p ~/docker-nginx/html
 ##### cd ~/docker-nginx/html
 
-★ Now create index.html page here: vim index.html ( refer repo for code ) 
+★ Now create index.html page here: vim index.html ( refer repo for code )
+
+#### Now for creating nginx docker container run below command:
+
+##### docker run -l service=nginx --name nginx-container -p 80:80 -d -v ~/docker-nginx/html:/usr/share/nginx/html nginx
+
+★ here host port or base os port is 80 and container port is also 80 because nginx work on port no 80
+★ we are mounting host dir ~/docker-nginx/html as volume with document root of nginx /usr/share/nginx/html 
+★ to view container run "docker ps"
+
+
+
 
