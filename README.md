@@ -8,3 +8,13 @@
 
 ##### Note: To exit htop container, use the q key.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Step3: Create an Nginx Docker container to be used for Gremlin Attacks:
+
+#### Nginx is a popular web server that we will use as the target of our chaos experiments
+
+##### Note: First we have to create directory HTML page that we will serve using Nginx.
+##### mkdir -p ~/docker-nginx/html
+##### cd ~/docker-nginx/html
+
+★ Now create index.html page here: vim index.html ( refer repo for code ) 
+
